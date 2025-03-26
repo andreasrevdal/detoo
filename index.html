@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detoo på twitch!">
+    <title>Detoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <link rel="icon" href="img/logo.png" type="image/png">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="logo">
+                <img src="img/logo.png" alt="Detoo Logo" class="logo-img">
+            </a>
+            <div class="nav-menu">
+                <a href="#stream" class="nav-link">Live</a>
+                <a href="#clips" class="nav-link">Klipps</a>
+                <a href="#youtube" class="nav-link">Videoer</a>
+                <a href="#stats" class="nav-link">Stats</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://givetip.to/nb/detoo" target="_blank" class="social-icon" title="Vipps (Donate)"><i class="ph-money"></i></a>
+                <a href="https://www.instagram.com/detoofn" target="_blank" class="social-icon" title="Instagram"><i class="ph-instagram-logo"></i></a>
+                <a href="https://www.tiktok.com/@.detoo" target="_blank" class="social-icon" title="TikTok"><i class="ph-tiktok-logo"></i></a>
+                <a href="https://www.twitch.tv/detoo" target="_blank" class="social-icon" title="Twitch"><i class="ph-twitch-logo"></i></a>
+                <a href="https://www.youtube.com/c/detoo" target="_blank" class="social-icon" title="YouTube"><i class="ph-youtube-logo"></i></a>
+                <a href="https://discord.com/invite/Cg624xKTtP" target="_blank" class="social-icon" title="Discord"><i class="ph-discord-logo"></i></a>
+                <a href="https://x.com/detoo_" target="_blank" class="social-icon" title="X (Twitter)"><i class="ph-twitter-logo"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="stream" class="stream-section">
+            <div class="container">
+                <h1 class="main-title">Detoo Live</h1>
+                <h2 class="subtitle">Norges største subathon</h2>
+                <div class="stream-container">
+                    <div class="embed-container">
+                        <iframe
+                            src="https://embed.twitch.tv/?channel=detoo&parent=detoo.vortx.no&referrer=https%3A%2F%2Fdetoo.vortx.no%2F"
+                            frameborder="0"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="stream-info">
+                        <div class="live-indicator">
+                            <span class="live-dot"></span>
+                            Se meg live
+                        </div>
+                        <a href="https://twitch.tv/detoo" class="twitch-button">
+                            <i class="ph-twitch-logo"></i>
+                            Se på Twitch
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clips" class="clips-section">
+            <div class="container">
+                <h2 class="section-title">Populære Klipps</h2>
+                <div class="clips-grid">
+                    <div class="clip-card">
+                        <div class="embed-container">
+                            <!-- Fikser API etterhvert men stress, klokka er 3 på morningen, går gjennom scripts.-->
+                            <iframe
+                                src="https://clips.twitch.tv/embed?clip=SuccessfulVainPeanutPogChamp-eMwZVyCLqURdprOn&parent=detoo.vortx.no"
+                                frameborder="0"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="clip-navigation">
+                    <button class="nav-button prev">
+                        <i class="ph-caret-left"></i>
+                    </button>
+                    <button class="nav-button next">
+                        <i class="ph-caret-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="youtube" class="youtube-section">
+            <div class="container">
+                <h2 class="section-title">Siste YouTube Video</h2>
+                <div class="youtube-container">
+                    <div class="embed-container">
+                        <iframe
+                            src="https://www.youtube.com/embed/Gsf4UMR6nuM"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="stats" class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Subathon Statistikk</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="ph-users"></i>
+                    <h3>Peak subs</h3>
+                    <p data-stat="followers">10,783</p>
+                </div>
+                <div class="stat-card">
+                    <i class="ph-crown"></i>
+                    <h3>Subathon Timer</h3>
+                    <p data-stat="stream-hours">1728</p>
+                    <span class="stat-subtitle">Timer streamet</span>
+                </div>
+                <div class="stat-card">
+                    <i class="ph-chart-line-up"></i>
+                    <h3>Subathon Dager</h3>
+                    <p data-stat="max-viewers">72</p>
+                    <span class="stat-subtitle">Dager streamet</span>
+                </div>
+                <div class="stat-card">
+                    <i class="ph-users-three"></i>
+                    <h3>Peak seere</h3>
+                    <p data-stat="avg-viewers">2240</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="social" class="content-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Connect</h2>
+            </div>
+            <div class="social-grid">
+                <div class="content-card">
+                    <div class="card-content">
+                        <h3>Join Discord</h3>
+                        <p>Få varslinger og se på film med meg!</p>
+                        <iframe 
+                            src="https://discord.com/widget?id=1017831838204571718" 
+                            width="100%" 
+                            height="300" 
+                            allowtransparency="true" 
+                            frameborder="0">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="content-card">
+                    <div class="card-content">
+                        <h3>Add meg på snapchat!</h3>
+                        <p>Se snapper av hva som skjer utennom streamen!</p>
+                        <img src="img/snap.png" alt="Snapchat QR Code" class="qr-code">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/detoo%20logo.205c1065.png-fT2UIYgycLiytSgDW96qoghyQ6TbBA.webp" alt="Detoo Logo" class="footer-logo">
+                    <p>DETOO.NO</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://givetip.to/nb/detoo" target="_blank" class="social-icon" title="Vipps (Donate)"><i class="ph-money"></i></a>
+                    <a href="https://www.instagram.com/detoofn" target="_blank" class="social-icon" title="Instagram"><i class="ph-instagram-logo"></i></a>
+                    <a href="https://www.tiktok.com/@.detoo" target="_blank" class="social-icon" title="TikTok"><i class="ph-tiktok-logo"></i></a>
+                    <a href="https://www.twitch.tv/detoo" target="_blank" class="social-icon" title="Twitch"><i class="ph-twitch-logo"></i></a>
+                    <a href="https://www.youtube.com/c/detoo" target="_blank" class="social-icon" title="YouTube"><i class="ph-youtube-logo"></i></a>
+                    <a href="https://discord.com/invite/Cg624xKTtP" target="_blank" class="social-icon" title="Discord"><i class="ph-discord-logo"></i></a>
+                    <a href="https://x.com/detoo_" target="_blank" class="social-icon" title="X (Twitter)"><i class="ph-twitter-logo"></i></a>
+                </div>
+                <div class="footer-credit">
+                    Laget av<a href="https://revdal.no/" target="_blank">Revdal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-to-top">
+        <i class="ph-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
